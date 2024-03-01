@@ -31,3 +31,26 @@ body {
     text-wrap: balance;
   }
 }
+
+.shadow-xl.p-2 {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  top: 0px;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/3039/3039386.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+.shadow-xl.p-2:hover .overlay {
+  opacity: .5;
+}
