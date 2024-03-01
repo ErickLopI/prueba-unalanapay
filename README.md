@@ -2,7 +2,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, download proyect:
+
+* 1.- Descargar el codigo en tu local "git clone https://github.com/ErickLopI/prueba-unalanapay.git"
+* 2.- Posteriormente irte a tu carpeta donde descargaste el poryecto y abrir con tu IDE
+* 3.- Abrir una terminal en la ruta del proyecto y realizar un "npm install"
+* 4.- una vez terminado de descargar los paquetes ejecutar el siguiente comando "npm run dev"
+* 5.- si todo fue correcto el proyecto estara funcionando en http://localhost:3000
+
 
 ```bash
 npm run dev
@@ -19,6 +26,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Mejoras si fuera un proyecto real
+* 1.- Agregaria un manejador de estados Global (Redux o Context API)
+* 2.- Buscaria la forma de realizar mejoras en el performance
+* 3.- Integraria compresión de archivos o en su defecto que vengan de una CDN y sean Ligeros.
+* 4.- Buscaria las mejores practicas de desarrollo en Next 14
 
 ## Learn More
 
