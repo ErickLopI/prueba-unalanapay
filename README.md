@@ -27,6 +27,12 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Mejoras si fuera un proyecto real
+* 1.- Agregaria un manejador de estados Global (Redux o Context API)
+* 2.- Buscaria la forma de realizar mejoras en el performance
+* 3.- Integraria compresión de archivos o en su defecto que vengan de una CDN y sean Ligeros.
+* 4.- Buscaria las mejores practicas de desarrollo en Next 14
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
