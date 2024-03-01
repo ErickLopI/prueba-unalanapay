@@ -10,12 +10,15 @@ const imageLoader = ({ src, width }) => {
 }
 
 async function getData() {
-  const res = await fetch('https://ghibliapi.vercel.app/films', {cache: 'no-store'})
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
+  
+  try {
+    const res = await fetch('https://ghibliapi.vercel.app/films', {cache: 'no-store'})
+    return res.json()
+    
+  } catch (error) {
+    console.log(error)
   }
-  return res.json()
+ 
 }
 
 export default async function Home() {

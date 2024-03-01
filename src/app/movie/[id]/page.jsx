@@ -6,12 +6,15 @@ import Intro from "@/app/Components/Intro";
 
 
 async function getMovie(id) {
-  const res = await fetch(`https://ghibliapi.vercel.app/films/${id}`);
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch data");
+  
+  try {
+    const res = await fetch(`https://ghibliapi.vercel.app/films/${id}`);
+    return await res.json();
+    
+  } catch (error) {
+     console.log(error)
   }
-  return res.json();
+  
 }
 
 const imageLoader = ({ src, width }) => {
